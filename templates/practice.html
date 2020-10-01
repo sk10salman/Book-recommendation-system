@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}
+    Google Books Api
+{% endblock %}
+    <link rel="stylesheet" type="text/css" href="../static/final.css">
+
+{% block body %}
+    <h1>Book Finder</h1>
+    <form action="{{url_for('search')}}" method="post">
+        <input id="search" name="abc" placeholder="Title or Author">
+        <input id="title" name="tit" placeholder="Title">
+        <button id="button" type="submit">Click Me</button>
+    </form>
+{% endblock %}
